@@ -91,3 +91,27 @@ label:hover {
 img {
     width: 500px
 }
+
+@media screen and (max-width: 768px) {
+    .main{
+        display: block;
+        block-size: auto;
+    }
+    .left{
+        width: 100vw;
+        height: 500px;
+    }
+    .right{
+        width: 100vw;
+        height: 400px;
+    }
+    img {
+        width: 350px;
+        position: relative;
+    }
+    h1 {
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+    }
+}
