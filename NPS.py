@@ -40,3 +40,6 @@ total_detrator = contar_detrator.sum()
 nps_igor = ((total_promotores - total_detrator) / total_avaliacoes) * 100
 nps_igor = int(nps_igor['Nota'])
 print("NPS do Igor Villar: ", nps_igor)
+
+# E quando o agente não tiver Nota?
+# E quando o agente não estiver no CSV?
