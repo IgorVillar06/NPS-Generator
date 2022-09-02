@@ -18,7 +18,7 @@ total_detrator = contar_detrator.sum()
 
 nps_time = ((total_promotores - total_detrator) / total_avaliacoes) * 100
 nps_time = int(nps_time['Nota'])
-print("NPS do time: ", nps_time)
+print("NPS do time:", nps_time)
 
 for Agente in database['Agente'].drop_duplicates():
     avaliacoes = database[(database['Nota'] >= 1) & (database['Agente'] == Agente)]
@@ -36,4 +36,4 @@ for Agente in database['Agente'].drop_duplicates():
 
     nps_time = (((total_promotores - total_detrator) / total_avaliacoes) * 100)
     nps_time = int(nps_time['Nota'])
-    print("NPS de ", Agente, "é ", nps_time)
+    print("NPS de", Agente, ":", nps_time)
